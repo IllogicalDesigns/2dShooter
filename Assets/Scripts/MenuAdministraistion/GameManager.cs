@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour {
 	}
 	// Use this for initialization
 	void Start () {
+		Time.timeScale = 1;
 		alreadyWon = false;
 		enables[0].SetActive(false);
 		int i = 1;
