@@ -22,7 +22,6 @@ public class ContolOptions : MonoBehaviour {
 	private int p3I = 0;
 	private int p4I = 0;
 	int i = 0;
-	//AxisConfiguration axisConfig = InputManager.GetAxisConfiguration("Jump");
 
 	public void p1Iterate () {
 		p1I ++;
@@ -30,6 +29,8 @@ public class ContolOptions : MonoBehaviour {
 			p1I = 0;
 		Debug.Log (p1I);
 		UpdateP1ControlType ();
+		AxisConfiguration test = InputManager.GetAxisConfiguration("KeyboardAndMouse","Jump1");
+		test.joystick = 2;
 	}
 	public void p2Iterate () {
 		p2I ++;
