@@ -34,6 +34,7 @@ public class MainMenu : MonoBehaviour
 		charSelect.SetActive (false);
 		lvlSelect.SetActive (false);
 		options.SetActive (false);
+		PlayerPrefs.Save ();
 	}
 
 	public void Main2Options ()
