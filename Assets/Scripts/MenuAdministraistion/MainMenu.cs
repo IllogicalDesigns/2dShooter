@@ -20,6 +20,11 @@ public class MainMenu : MonoBehaviour
 		options.SetActive (false);
 	}
 
+	public void Main2OnlineLobby () 
+	{
+		Application.LoadLevel ("testLobby");
+	}
+
 	public void Main2CharSelect ()
 	{
 		main.SetActive (false);
